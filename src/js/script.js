@@ -17,9 +17,11 @@ function validarErro(input, message){
 }
 
 //VALIDAR SUCCCESO
-function validarSucesso(img){
-    const
-
+function validarSucesso(input){
+    //retronar para o elemento pai
+    const controle = input.parentElement;
+    //PEGA A CLASSE DO CONTROLE SUCESSO
+    console.className= "controle error"
 }
 
 //FUNÇÃO CHECAR CAMPOS
@@ -69,3 +71,10 @@ form.addEventListener('submit', (e)=>{
     //CHAMAR A FUNÇÃO QUE CHECAR OS CAMPOS
     checarCampos()
 })
+
+function validarSucesso(input){
+    //retronar para o elemento pai
+    const controle = input.parentElement;
+    //PEGA A CLASSE DO CONTROLE SUCESSO
+    console.className= "controle error"
+}
