@@ -1,7 +1,7 @@
 //DECLARANDO AS VARIÁVEIS
 const form = document.getElementById("form")
 const nome = document.getElementById("nome")
-const senha = documet.getElementById("senha")
+const senha = document.getElementById("senha")
 const email = document.getElementById("email")
 
 //VALIDAR ERRO
@@ -21,8 +21,17 @@ function validarSucesso(input){
     //retronar para o elemento pai
     const controle = input.parentElement;
     //PEGA A CLASSE DO CONTROLE SUCESSO
-    console.className= "controle error"
+    controle.className= "controle error"
 }
+
+function chamar(){
+    if(validarErro){
+        window.location = "index.html"
+    }
+    else{
+        window.location="menu.html"
+        }
+    }
 
 //FUNÇÃO CHECAR CAMPOS
 function checarCampos(){
@@ -72,9 +81,3 @@ form.addEventListener('submit', (e)=>{
     checarCampos()
 })
 
-function validarSucesso(input){
-    //retronar para o elemento pai
-    const controle = input.parentElement;
-    //PEGA A CLASSE DO CONTROLE SUCESSO
-    console.className= "controle error"
-}

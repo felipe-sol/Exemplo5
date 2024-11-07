@@ -1,0 +1,103 @@
+/*RESET BÁSICO*/;
+/* *SELETOR UNIVERSAL*/
+
+*{
+margin:0;
+padding:0;
+box-sizing: 0;
+
+}
+
+body{
+    background: lightslategrey;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+}
+
+.main{
+    width:450px;
+    background:pink;
+    border:2px solid black;
+    border-radius: 10px;
+    
+}
+
+header h1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: lightslategrey;
+    margin-bottom: 20px;
+}
+
+.form{
+padding: 0 40px 30px;
+}
+
+.controle{
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.controle label{
+    display:inline-block;
+    color:black;
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+.controle input{
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width:60%;
+    height:15px;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.controle.erro i.erro{
+    visibility: visible;
+}
+
+.controle.erro i.sucesso{
+    visibility: visible;
+}
+.controle.erro small{
+    color: red;
+    font-size: 1.2rem;
+    visibility: visible;
+}
+.controle i{
+    position: absolute;
+    top:4px;
+    right:10px;
+    visibility: hidden;
+}
+.controle small{
+    visibility: hidden;
+    position: absolute;
+    top: 5px;
+    font-size: 12px;
+   color: red;
+}
+.form button{
+    width:70%;
+    height:30px;
+    border-radius: 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: brown;
+    color:white;
+    margin-left: 50px;
+
+}
+
+.form button:hover{
+    background: red;
+    color: white;
+    box-shadow: 10px 10px 10px grey;
+}
